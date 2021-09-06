@@ -17,7 +17,7 @@ tour = IG.Tour()
 tour.Description(IG.Tour.TEXT,tourDescription)
 request.addTour(tour)
 
-node = request.XenVM("worker-" + str(i))
+node = request.XenVM("spark-node")
 node.cores = 8
 node.ram = 8192
 node.routable_control_ip = "true" 
