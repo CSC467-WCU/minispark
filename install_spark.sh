@@ -12,7 +12,7 @@ set -x
 
 apt-get update && apt-get install -qqq -y curl vim wget software-properties-common ssh net-tools ca-certificates jq
 apt-get install -qqq -y python3 python3-pip python3-numpy python3-matplotlib python3-scipy python3-pandas python3-simpy ipython3
-pip3 install ipykernel jupyter findspark
+pip3 install --upgrade ipykernel jupyter findspark
 pip3 install --upgrade Pygments
 
 cd /opt
